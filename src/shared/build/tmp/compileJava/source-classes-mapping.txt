@@ -1,0 +1,4 @@
+booker/app/shared/domain/Identifier.java
+ booker.app.shared.domain.Identifier
+booker/app/shared/domain/StringValueObject.java
+ booker.app.shared.domain.StringValueObject

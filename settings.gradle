@@ -1,0 +1,7 @@
+rootProject.name = 'booker-java-DDD'
+
+include ':shared'
+project(':shared').projectDir = new File('src/shared')
+
+include ':maroos'
+project(':maroos').projectDir = new File('src/maroos')

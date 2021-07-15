@@ -108,7 +108,7 @@ mainClassName = 'booker.app.app.Starter'
 dependencies {
   compile("org.springframework.boot:spring-boot-starter-web")
 
-//  implementation project(":shared")
+  implementation project(":shared")
   implementation project(":maroos")
 
   testCompile("org.springframework.boot:spring-boot-starter-test")

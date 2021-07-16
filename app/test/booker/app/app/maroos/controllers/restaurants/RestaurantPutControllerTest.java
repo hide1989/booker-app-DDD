@@ -8,7 +8,7 @@ class RestaurantPutControllerTest extends RequestTestCase {
     @Test
     void create_restaurant () throws Exception {
         String body = "{\"restaurantName\":\"El Milenario\",\"RestaurantAbstarct\":\"Un restaurante que volara tu sentido del gusto\",\"RestaurantSpecialities\":\"Comida mediterranea\",\"RestaurantSlogan\":\"Barriga llena corazon contento\",\"RestaurantLogo\":\"http://imagenrestaurante.online.jpg\",\"RestaurantWebSite\":\"http://elrestaurantebonito.com.co\",\"RestaurantPhone\":\"300-595-28-63\"}";
-        assertRequestWithBody("PUT", "/create/1aab45ba-3c7a-4344-8936-78466eca77fa",body, 201);
+        assertRequestWithBody("PUT", "/restaurants/create/1aab45ba-3c7a-4344-8936-78466eca77fa",body, 201);
     }
 
 }

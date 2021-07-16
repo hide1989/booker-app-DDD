@@ -22,3 +22,5 @@ booker/app/maroos/restaurants/domain/vo/RestaurantLogo.java
  booker.app.maroos.restaurants.domain.vo.RestaurantLogo
 booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
  booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
+booker/app/maroos/restaurants/infrastructure/persistance/InMemoryRestaurantRepository.java
+ booker.app.maroos.restaurants.infrastructure.persistance.InMemoryRestaurantRepository

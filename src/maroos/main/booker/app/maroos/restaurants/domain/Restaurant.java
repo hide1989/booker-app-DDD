@@ -15,15 +15,7 @@ public final class Restaurant {
     private final RestaurantWebSite restaurantWebSite;
     private final RestaurantPhone restaurantPhone;
 
-    public Restaurant(
-            RestaurantId restaurantId,
-            RestaurantName restaurantName,
-            RestaurantAbstract restaurantAbstract,
-            RestaurantSpecialities restaurantSpecialities,
-            RestaurantSlogan restaurantSlogan,
-            RestaurantLogo restaurantLogo,
-            RestaurantWebSite restaurantWebSite,
-            RestaurantPhone restaurantPhone) {
+    public Restaurant(RestaurantId restaurantId, RestaurantName restaurantName, RestaurantAbstract restaurantAbstract, RestaurantSpecialities restaurantSpecialities, RestaurantSlogan restaurantSlogan, RestaurantLogo restaurantLogo, RestaurantWebSite restaurantWebSite, RestaurantPhone restaurantPhone) {
         this.restaurantId = restaurantId;
         this.restaurantName = restaurantName;
         this.restaurantAbstract = restaurantAbstract;
@@ -32,6 +24,38 @@ public final class Restaurant {
         this.restaurantLogo = restaurantLogo;
         this.restaurantWebSite = restaurantWebSite;
         this.restaurantPhone = restaurantPhone;
+    }
+
+    public RestaurantId restaurantId() {
+        return restaurantId;
+    }
+
+    public RestaurantName restaurantName() {
+        return restaurantName;
+    }
+
+    public RestaurantAbstract restaurantAbstract() {
+        return restaurantAbstract;
+    }
+
+    public RestaurantSpecialities restaurantSpecialities() {
+        return restaurantSpecialities;
+    }
+
+    public RestaurantSlogan restaurantSlogan() {
+        return restaurantSlogan;
+    }
+
+    public RestaurantLogo restaurantLogo() {
+        return restaurantLogo;
+    }
+
+    public RestaurantWebSite restaurantWebSite() {
+        return restaurantWebSite;
+    }
+
+    public RestaurantPhone restaurantPhone() {
+        return restaurantPhone;
     }
 
     @Override

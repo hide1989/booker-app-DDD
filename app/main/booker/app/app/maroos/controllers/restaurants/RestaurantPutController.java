@@ -1,5 +1,7 @@
 package booker.app.app.maroos.controllers.restaurants;
 
+import booker.app.maroos.restaurants.application.create.CreateRestaurantRequest;
+import booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,9 +10,28 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/restaurants")
 public class RestaurantPutController {
 
+    private final RestaurantCreatorUseCase restaurantCreatorUseCase;
+
+    public RestaurantPutController(RestaurantCreatorUseCase restaurantCreatorUseCase) {
+        this.restaurantCreatorUseCase = restaurantCreatorUseCase;
+    }
+
     @PutMapping("/create/{id}")
     public ResponseEntity create(@PathVariable("id") String id, @RequestBody Request request){
 
+
+        restaurantCreatorUseCase.create(
+                new CreateRestaurantRequest(
+                        id,
+                        request.restaurantName(),
+                        request.restaurantAbstarct(),
+                        request.restaurantSpecialities(),
+                        request.restaurantSlogan(),
+                        request.restaurantLogo(),
+                        request.restaurantWebSite(),
+                        request.restaurantPhone()
+                )
+        );
         return new ResponseEntity(HttpStatus.CREATED);
     }
 }
@@ -18,7 +39,7 @@ public class RestaurantPutController {
 final class Request {
     private String restaurantName;
     private String restaurantAbstarct;
-    private String restauratSpecialities;
+    private String restaurantSpecialities;
     private String restaurantSlogan;
     private String restaurantLogo;
     private String restaurantWebSite;
@@ -40,12 +61,12 @@ final class Request {
         this.restaurantAbstarct = restaurantAbstarct;
     }
 
-    public String restauratSpecialities() {
-        return restauratSpecialities;
+    public String restaurantSpecialities() {
+        return restaurantSpecialities;
     }
 
-    public void setRestauratSpecialities(String restauratSpecialities) {
-        this.restauratSpecialities = restauratSpecialities;
+    public void setRestaurantSpecialities(String restaurantSpecialities) {
+        this.restaurantSpecialities = restaurantSpecialities;
     }
 
     public String restaurantSlogan() {

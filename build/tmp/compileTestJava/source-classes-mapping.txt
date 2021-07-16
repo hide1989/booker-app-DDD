@@ -2,3 +2,5 @@ booker/app/app/maroos/controllers/RequestTestCase.java
  booker.app.app.maroos.controllers.RequestTestCase
 booker/app/app/maroos/controllers/health_check/HealthCheckGetControllerTest.java
  booker.app.app.maroos.controllers.health_check.HealthCheckGetControllerTest
+booker/app/app/maroos/controllers/restaurants/RestaurantPutControllerTest.java
+ booker.app.app.maroos.controllers.restaurants.RestaurantPutControllerTest

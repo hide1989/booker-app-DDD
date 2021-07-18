@@ -5,3 +5,5 @@ project(':shared').projectDir = new File('src/shared')
 
 include ':maroos'
 project(':maroos').projectDir = new File('src/maroos')
+include 'test'
+

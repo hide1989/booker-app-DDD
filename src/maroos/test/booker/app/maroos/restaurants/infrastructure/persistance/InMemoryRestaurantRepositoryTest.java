@@ -1,5 +1,6 @@
 package booker.app.maroos.restaurants.infrastructure.persistance;
 
+import booker.app.maroos.restaurants.RestaurantsModuleInfrastructureTest;
 import booker.app.maroos.restaurants.domain.Restaurant;
 import booker.app.maroos.restaurants.domain.vo.*;
 import org.junit.Assert;
@@ -7,14 +8,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.Optional;
 
-class InMemoryRestaurantRepositoryTest {
+class InMemoryRestaurantRepositoryTest extends RestaurantsModuleInfrastructureTest {
 
-    InMemoryRestaurantRepository repository;
     Restaurant restaurant;
 
     @BeforeEach
     void setup(){
-        repository = new InMemoryRestaurantRepository();
         restaurant =  new Restaurant(
                 new RestaurantId("123456789"),
                 new RestaurantName("El Mejor"),
@@ -29,19 +28,19 @@ class InMemoryRestaurantRepositoryTest {
 
     @Test
     void save_a_restaurant() {
-        repository.save(restaurant);
+        inMemoryRestaurantRepository.save(restaurant);
     }
 
     @Test
     void search_an_existing_restaurant(){
-        repository.save(restaurant);
-        Optional<Restaurant> expectedRestaurant = repository.search(restaurant.restaurantId());
+        inMemoryRestaurantRepository.save(restaurant);
+        Optional<Restaurant> expectedRestaurant = inMemoryRestaurantRepository.search(restaurant.restaurantId());
         Assert.assertEquals(Optional.of(restaurant), expectedRestaurant);
     }
 
     @Test
     void if_not_exist_restaurant(){
-        boolean hasRestaurant = repository.search(new RestaurantId("123456789")).isPresent();
+        boolean hasRestaurant = inMemoryRestaurantRepository.search(new RestaurantId("5663456345")).isPresent();
         Assert.assertFalse(hasRestaurant);
     }
 

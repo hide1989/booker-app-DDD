@@ -60,9 +60,16 @@ subprojects {
   }
 
   dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-web")
 
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testImplementation rootProject.sourceSets.main.output // indica que todos los subproyectos implementaran la suit de test del padre o proyecto raiz
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    //inyecta la share como dependencia de los demas subproyectos
+    if(project.name != "shared"){
+      implementation project(":shared")
+      testImplementation project(":shared").sourceSets.test.output
+    }
   }
 
   bootJar {
@@ -111,6 +118,6 @@ dependencies {
   implementation project(":shared")
   implementation project(":maroos")
 
-  testCompile("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

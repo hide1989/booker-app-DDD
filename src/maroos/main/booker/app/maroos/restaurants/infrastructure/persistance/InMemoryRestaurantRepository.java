@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public final class InMemoryRestaurantRepository implements RestaurantRepository {
 
-    private HashMap<RestaurantId, Restaurant> restaurants = new HashMap<>();
+    private final HashMap<RestaurantId, Restaurant> restaurants = new HashMap<>();
 
     @Override
     public void save(Restaurant restaurant) {

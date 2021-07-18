@@ -6,4 +6,8 @@ public class RestaurantLogo extends StringValueObject {
     public RestaurantLogo(String value) {
         super(value);
     }
+
+    private RestaurantLogo() {
+        super("");
+    }
 }

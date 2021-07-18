@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="booker.app.maroos.restaurants.domain.Restaurant" table="restaurants">
+        <composite-id name="restaurantId" class="booker.app.maroos.restaurants.domain.vo.RestaurantId" access="field">
+            <key-property column="id" name="value" length="36" access="field"/>
+        </composite-id>
+
+        <component name="restaurantName" class="booker.app.maroos.restaurants.domain.vo.RestaurantName" access="field">
+            <property name="value" column="name" type="string" access="field" />
+        </component>
+
+        <component name="restaurantAbstract" class="booker.app.maroos.restaurants.domain.vo.RestaurantAbstract" access="field">
+            <property name="value" column="abstract" type="string" access="field" />
+        </component>
+
+        <component name="restaurantSpecialities" class="booker.app.maroos.restaurants.domain.vo.RestaurantSpecialities" access="field">
+            <property name="value" column="specialities" type="string" access="field" />
+        </component>
+
+        <component name="restaurantSlogan" class="booker.app.maroos.restaurants.domain.vo.RestaurantSlogan" access="field">
+            <property name="value" column="slogan" type="string" access="field" />
+        </component>
+
+        <component name="restaurantLogo" class="booker.app.maroos.restaurants.domain.vo.RestaurantLogo" access="field">
+            <property name="value" column="logo" type="string" access="field" />
+        </component>
+
+        <component name="restaurantWebSite" class="booker.app.maroos.restaurants.domain.vo.RestaurantWebSite" access="field">
+            <property name="value" column="website" type="string" access="field" />
+        </component>
+
+        <component name="restaurantPhone" class="booker.app.maroos.restaurants.domain.vo.RestaurantPhone" access="field">
+            <property name="value" column="phone" type="string" access="field" />
+        </component>
+
+    </class>
+</hibernate-mapping>

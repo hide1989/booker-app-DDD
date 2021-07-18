@@ -24,7 +24,7 @@ public class RestaurantPutController {
                 new CreateRestaurantRequest(
                         id,
                         request.restaurantName(),
-                        request.restaurantAbstarct(),
+                        request.restaurantAbstract(),
                         request.restaurantSpecialities(),
                         request.restaurantSlogan(),
                         request.restaurantLogo(),
@@ -38,7 +38,7 @@ public class RestaurantPutController {
 
 final class Request {
     private String restaurantName;
-    private String restaurantAbstarct;
+    private String restaurantAbstract;
     private String restaurantSpecialities;
     private String restaurantSlogan;
     private String restaurantLogo;
@@ -53,12 +53,12 @@ final class Request {
         this.restaurantName = restaurantName;
     }
 
-    public String restaurantAbstarct() {
-        return restaurantAbstarct;
+    public String restaurantAbstract() {
+        return restaurantAbstract;
     }
 
-    public void setRestaurantAbstarct(String restaurantAbstarct) {
-        this.restaurantAbstarct = restaurantAbstarct;
+    public void setRestaurantAbstract(String restaurantAbstract) {
+        this.restaurantAbstract = restaurantAbstract;
     }
 
     public String restaurantSpecialities() {
@@ -97,7 +97,7 @@ final class Request {
         return restaurantPhone;
     }
 
-    public void restaurantPhone(String restaurantPhone) {
+    public void setRestaurantPhone(String restaurantPhone) {
         this.restaurantPhone = restaurantPhone;
     }
 }

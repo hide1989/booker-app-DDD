@@ -7,4 +7,8 @@ public class RestaurantId extends Identifier {
     public RestaurantId(String value) {
         super(value);
     }
+
+    private RestaurantId() {
+        super("");
+    }
 }

@@ -61,8 +61,16 @@ subprojects {
 
   dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation 'org.hibernate:hibernate-core:5.4.5.Final'
+    implementation 'org.springframework:spring-orm:5.1.10.RELEASE'
+    implementation 'org.apache.tomcat:tomcat-dbcp:9.0.26'
+    implementation 'com.sun.xml.bind:jaxb-impl:2.1.2'
+    implementation 'javax.xml.bind:jaxb-api:2.3.1'
+
+    runtime 'mysql:mysql-connector-java:8.0.17'
 
     testImplementation rootProject.sourceSets.main.output // indica que todos los subproyectos implementaran la suit de test del padre o proyecto raiz
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.8.RELEASE'
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     //inyecta la share como dependencia de los demas subproyectos

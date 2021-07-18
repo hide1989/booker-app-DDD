@@ -6,4 +6,8 @@ public class RestaurantPhone extends StringValueObject {
     public RestaurantPhone(String value) {
         super(value);
     }
+
+    private RestaurantPhone() {
+        super("");
+    }
 }

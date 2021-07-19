@@ -4,27 +4,27 @@ booker/app/maroos/restaurants/domain/vo/RestaurantWebSite.java
  booker.app.maroos.restaurants.domain.vo.RestaurantWebSite
 booker/app/maroos/restaurants/domain/vo/RestaurantAbstract.java
  booker.app.maroos.restaurants.domain.vo.RestaurantAbstract
-booker/app/maroos/restaurants/application/create/CreateRestaurantRequest.java
- booker.app.maroos.restaurants.application.create.CreateRestaurantRequest
 booker/app/maroos/restaurants/domain/vo/RestaurantSlogan.java
  booker.app.maroos.restaurants.domain.vo.RestaurantSlogan
-booker/app/maroos/restaurants/domain/vo/RestaurantPhone.java
- booker.app.maroos.restaurants.domain.vo.RestaurantPhone
+booker/app/maroos/restaurants/application/create/CreateRestaurantRequest.java
+ booker.app.maroos.restaurants.application.create.CreateRestaurantRequest
 booker/app/maroos/restaurants/domain/vo/RestaurantName.java
  booker.app.maroos.restaurants.domain.vo.RestaurantName
-booker/app/maroos/restaurants/domain/vo/RestaurantSpecialities.java
- booker.app.maroos.restaurants.domain.vo.RestaurantSpecialities
-booker/app/maroos/shared/infrastructure/persistence/MaroosHibernateConfiguration.java
- booker.app.maroos.shared.infrastructure.persistence.MaroosHibernateConfiguration
-booker/app/maroos/restaurants/domain/Restaurant.java
- booker.app.maroos.restaurants.domain.Restaurant
 booker/app/maroos/restaurants/domain/vo/RestaurantId.java
  booker.app.maroos.restaurants.domain.vo.RestaurantId
-booker/app/maroos/restaurants/domain/RestaurantRepository.java
- booker.app.maroos.restaurants.domain.RestaurantRepository
+booker/app/maroos/restaurants/domain/vo/RestaurantPhone.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantPhone
+booker/app/maroos/shared/infrastructure/persistence/MaroosHibernateConfiguration.java
+ booker.app.maroos.shared.infrastructure.persistence.MaroosHibernateConfiguration
+booker/app/maroos/restaurants/domain/vo/RestaurantSpecialities.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantSpecialities
 booker/app/maroos/restaurants/infrastructure/persistence/MySqlRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.MySqlRestaurantRepository
+booker/app/maroos/restaurants/domain/RestaurantRepository.java
+ booker.app.maroos.restaurants.domain.RestaurantRepository
 booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
  booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
+booker/app/maroos/restaurants/domain/Restaurant.java
+ booker.app.maroos.restaurants.domain.Restaurant
 booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository

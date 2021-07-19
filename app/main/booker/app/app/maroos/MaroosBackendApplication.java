@@ -9,6 +9,6 @@ import org.springframework.context.annotation.FilterType;
 @SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class) //omite las configuraciones por defecto de hibernate
 @ComponentScan(
         includeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Service.class),
-        value = {"booker.app.app", "booker.app.maroos"})
+        value = {"booker.app.app", "booker.app.maroos, booker.app.shared"})
 public class MaroosBackendApplication {
 }

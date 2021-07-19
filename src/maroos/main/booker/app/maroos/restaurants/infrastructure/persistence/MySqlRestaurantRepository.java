@@ -5,11 +5,11 @@ import booker.app.maroos.restaurants.domain.RestaurantRepository;
 import booker.app.maroos.restaurants.domain.vo.RestaurantId;
 import booker.app.shared.domain.Service;
 import org.hibernate.SessionFactory;
-
 import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class MySqlRestaurantRepository implements RestaurantRepository {
 
     private SessionFactory sessionFactory;

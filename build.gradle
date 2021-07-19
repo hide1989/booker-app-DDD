@@ -31,6 +31,8 @@ allprojects {
   }
 
 
+  // nos permite ejecutar tareas
+  //desde la carpeta raiz ejecutamos ./gradlew :view_paths
   task view_paths {
     doLast { task ->
       println "$task.project.name"
@@ -47,6 +49,8 @@ allprojects {
 subprojects {
   group = "booker.app.${rootProject.name}"
 
+
+  // se modifica estructura estandar de los directorios
   sourceSets {
     main {
       java { srcDirs = ['main'] }

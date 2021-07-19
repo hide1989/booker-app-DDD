@@ -22,9 +22,9 @@ booker/app/maroos/restaurants/domain/vo/RestaurantId.java
  booker.app.maroos.restaurants.domain.vo.RestaurantId
 booker/app/maroos/restaurants/domain/RestaurantRepository.java
  booker.app.maroos.restaurants.domain.RestaurantRepository
-booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
- booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
 booker/app/maroos/restaurants/infrastructure/persistence/MySqlRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.MySqlRestaurantRepository
+booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
+ booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
 booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository

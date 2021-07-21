@@ -49,7 +49,7 @@ public class MaroosHibernateConfiguration {
     }
 
     private List<String> subdirectoriesFor(String contextName) {
-        String path = "./src/" + contextName + "/booker/app/" + contextName + "/";
+        String path = "./src/" + contextName + "/main/booker/app/" + contextName + "/";
 
         String[] files = new File(path).list((current, name) -> new File(current, name).isDirectory());
 

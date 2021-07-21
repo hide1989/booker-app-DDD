@@ -1,12 +1,12 @@
 # 🐹 Pet project DDD
 ## 🍽 Booker-Restaurants
-Booker Restaurant is a project for give a service of booking implementing Domain Dive Desing
+Booker Restaurant is a project for give a service of booking implementing Domain Drive Desing
 
 ### 🧑 Im a restaurant customer
-As customer, I can search restaurant by its name and look its differents spaces and branch offices for booking
+* As customer, I can search restaurant by its name and look its differents spaces and branch offices for booking
 
 ### 🧔 Im a restaurant manager
-As manager, I can create a restaurant with its differents spaces and branch offices
+* As manager, I can create a restaurant with its differents spaces and branch offices
 
 ## 🏡 Domain Model
 
@@ -19,9 +19,9 @@ As manager, I can create a restaurant with its differents spaces and branch offi
 
 ![Domain Model](./ModelDomain.png)
 
-## Setup
+## 🛰 Setup
 
-### Run a Context
+### 🏃 Run a Context
 For run the specific context we need use the next terminal command
 ```
 ./gradlew :run --args="maroos api"

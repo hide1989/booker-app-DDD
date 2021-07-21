@@ -6,7 +6,7 @@ import booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaura
 import org.springframework.beans.factory.annotation.Autowired;
 
 public abstract class RestaurantsModuleInfrastructureTest extends MaroosContextInfrastructuraTestCase {
-    protected InMemoryRestaurantRepository inMemoryRestaurantRepository;
+    protected InMemoryRestaurantRepository inMemoryRestaurantRepository = new InMemoryRestaurantRepository();
 
     @Autowired
     protected RestaurantRepository mySqlRestaurantRepository;

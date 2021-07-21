@@ -35,6 +35,17 @@ public final class Restaurant extends AggregateRoot {
         this.restaurantPhone = restaurantPhone;
     }
 
+    private Restaurant() {
+        this.restaurantId = null;
+        this.restaurantName = null;
+        this.restaurantAbstract = null;
+        this.restaurantSpecialities = null;
+        this.restaurantSlogan = null;
+        this.restaurantLogo = null;
+        this.restaurantWebSite = null;
+        this.restaurantPhone = null;
+    }
+
     public RestaurantId restaurantId() {
         return restaurantId;
     }

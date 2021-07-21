@@ -8,14 +8,14 @@ booker/app/shared/infrastructure/cli/ConsoleCommand.java
  booker.app.shared.infrastructure.cli.ConsoleCommand
 booker/app/shared/domain/bus/event/DomainEvent.java
  booker.app.shared.domain.bus.event.DomainEvent
-booker/app/shared/infrastructure/bus/event/SpringApplicationEventBus.java
- booker.app.shared.infrastructure.bus.event.SpringApplicationEventBus
+booker/app/shared/domain/RestaurantCreatedDomainEvent.java
+ booker.app.shared.domain.RestaurantCreatedDomainEvent
+ booker.app.shared.domain.RestaurantCreatedDomainEvent$1
 booker/app/shared/domain/Utils.java
  booker.app.shared.domain.Utils
 booker/app/shared/domain/bus/event/EventBus.java
  booker.app.shared.domain.bus.event.EventBus
 booker/app/shared/domain/AggregateRoot.java
  booker.app.shared.domain.AggregateRoot
-booker/app/shared/domain/RestaurantCreatedDomainEvent.java
- booker.app.shared.domain.RestaurantCreatedDomainEvent
- booker.app.shared.domain.RestaurantCreatedDomainEvent$1
+booker/app/shared/infrastructure/bus/event/SpringApplicationEventBus.java
+ booker.app.shared.infrastructure.bus.event.SpringApplicationEventBus

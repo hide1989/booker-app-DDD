@@ -1,5 +1,7 @@
 package booker.app.app.maroos.controllers;
 
+import booker.app.shared.domain.bus.event.DomainEvent;
+import booker.app.shared.domain.bus.event.EventBus;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -8,6 +10,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultMatcher;
+
+import java.util.Collections;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -23,6 +27,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public abstract class RequestTestCase {
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private EventBus eventBus;
 
     public void assertResponse(String endpoint, Integer expectedStatusCode, String expectedResponse) throws Exception {
         ResultMatcher response = expectedResponse.isEmpty()
@@ -40,5 +47,9 @@ public abstract class RequestTestCase {
                 .perform(request(HttpMethod.valueOf(method), endpoint).content(body).contentType(APPLICATION_JSON))
                 .andExpect(status().is(expectedStatusCode))
                 .andExpect(content().string(""));
+    }
+
+    protected void givenISendAnEventToTheBus(DomainEvent<?> domainEvent) {
+        eventBus.publish(Collections.singletonList(domainEvent));
     }
 }

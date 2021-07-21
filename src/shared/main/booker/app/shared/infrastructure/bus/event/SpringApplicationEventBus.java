@@ -14,12 +14,14 @@ public class SpringApplicationEventBus implements EventBus {
         this.publisher = publisher;
     }
 
+
     @Override
-    public void publish(List<DomainEvent> events) {
-        events.forEach(this::publish);
+    public void publish(List<DomainEvent<?>> events) {
+
     }
 
     private void publish(final DomainEvent event){
         this.publisher.publishEvent(event);
     }
+
 }

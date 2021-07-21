@@ -1,10 +1,12 @@
 package booker.app.maroos.restaurants.domain;
 
 import booker.app.maroos.restaurants.domain.vo.*;
+import booker.app.shared.domain.AggregateRoot;
+import booker.app.shared.domain.RestaurantCreatedDomainEvent;
 
 import java.util.Objects;
 
-public final class Restaurant {
+public final class Restaurant extends AggregateRoot {
 
     private final RestaurantId restaurantId;
     private final RestaurantName restaurantName;
@@ -15,7 +17,14 @@ public final class Restaurant {
     private final RestaurantWebSite restaurantWebSite;
     private final RestaurantPhone restaurantPhone;
 
-    public Restaurant(RestaurantId restaurantId, RestaurantName restaurantName, RestaurantAbstract restaurantAbstract, RestaurantSpecialities restaurantSpecialities, RestaurantSlogan restaurantSlogan, RestaurantLogo restaurantLogo, RestaurantWebSite restaurantWebSite, RestaurantPhone restaurantPhone) {
+    public Restaurant(RestaurantId restaurantId,
+                      RestaurantName restaurantName,
+                      RestaurantAbstract restaurantAbstract,
+                      RestaurantSpecialities restaurantSpecialities,
+                      RestaurantSlogan restaurantSlogan,
+                      RestaurantLogo restaurantLogo,
+                      RestaurantWebSite restaurantWebSite,
+                      RestaurantPhone restaurantPhone) {
         this.restaurantId = restaurantId;
         this.restaurantName = restaurantName;
         this.restaurantAbstract = restaurantAbstract;
@@ -56,6 +65,41 @@ public final class Restaurant {
 
     public RestaurantPhone restaurantPhone() {
         return restaurantPhone;
+    }
+
+    public static Restaurant create(
+            RestaurantId restaurantId,
+            RestaurantName restaurantName,
+            RestaurantAbstract restaurantAbstract,
+            RestaurantSpecialities restaurantSpecialities,
+            RestaurantSlogan restaurantSlogan,
+            RestaurantLogo restaurantLogo,
+            RestaurantWebSite restaurantWebSite,
+            RestaurantPhone restaurantPhone
+    ){
+        Restaurant restaurant = new Restaurant(
+                restaurantId,
+                restaurantName,
+                restaurantAbstract,
+                restaurantSpecialities,
+                restaurantSlogan,
+                restaurantLogo,
+                restaurantWebSite,
+                restaurantPhone
+        );
+
+        restaurant.record(new RestaurantCreatedDomainEvent(
+            restaurantId.value(),
+            restaurantName.value(),
+            restaurantAbstract.value(),
+            restaurantSpecialities.value(),
+            restaurantSlogan.value(),
+            restaurantLogo.value(),
+            restaurantWebSite.value(),
+            restaurantPhone.value()
+        ));
+
+        return restaurant;
     }
 
     @Override

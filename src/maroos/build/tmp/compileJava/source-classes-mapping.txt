@@ -24,7 +24,7 @@ booker/app/maroos/restaurants/domain/RestaurantRepository.java
  booker.app.maroos.restaurants.domain.RestaurantRepository
 booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
  booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
-booker/app/maroos/restaurants/domain/Restaurant.java
- booker.app.maroos.restaurants.domain.Restaurant
 booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository
+booker/app/maroos/restaurants/domain/Restaurant.java
+ booker.app.maroos.restaurants.domain.Restaurant

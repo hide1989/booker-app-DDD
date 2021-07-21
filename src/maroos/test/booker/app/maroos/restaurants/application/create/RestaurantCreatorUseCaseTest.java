@@ -3,7 +3,11 @@ package booker.app.maroos.restaurants.application.create;
 import booker.app.maroos.restaurants.domain.Restaurant;
 import booker.app.maroos.restaurants.domain.RestaurantRepository;
 import booker.app.maroos.restaurants.domain.vo.*;
+import booker.app.shared.domain.RestaurantCreatedDomainEvent;
+import booker.app.shared.domain.bus.event.EventBus;
 import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
 
 import static org.mockito.Mockito.*;
 
@@ -13,7 +17,8 @@ class RestaurantCreatorUseCaseTest {
     @Test
     void save_a_restaurant() throws Exception{
         RestaurantRepository repository = mock(RestaurantRepository.class);
-        RestaurantCreatorUseCase useCase = new RestaurantCreatorUseCase(repository);
+        EventBus eventBus = mock(EventBus.class);
+        RestaurantCreatorUseCase useCase = new RestaurantCreatorUseCase(repository, eventBus);
 
         CreateRestaurantRequest request = new CreateRestaurantRequest(
                 "123456789",
@@ -37,10 +42,21 @@ class RestaurantCreatorUseCaseTest {
                 new RestaurantWebSite(request.restaurantWebSite()),
                 new RestaurantPhone(request.restaurantPhone())
         );
+        RestaurantCreatedDomainEvent domainEvent = new RestaurantCreatedDomainEvent(
+                request.restaurantId(),
+                request.restaurantName(),
+                request.restaurantAbstarct(),
+                request.restaurantSpecialities(),
+                request.restaurantSlogan(),
+                request.restaurantLogo(),
+                request.restaurantWebSite(),
+                request.restaurantPhone()
+        );
 
         useCase.create(request);
 
         verify(repository, atLeastOnce()).save(restaurant);
+        verify(eventBus, atLeastOnce()).publish(Collections.singletonList(domainEvent));
     }
 
 }

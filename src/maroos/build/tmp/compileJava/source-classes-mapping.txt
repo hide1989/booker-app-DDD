@@ -20,11 +20,31 @@ booker/app/maroos/restaurants/infrastructure/persistence/MySqlRestaurantReposito
  booker.app.maroos.restaurants.infrastructure.persistence.MySqlRestaurantRepository
 booker/app/maroos/restaurants/domain/RestaurantRepository.java
  booker.app.maroos.restaurants.domain.RestaurantRepository
-booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
- booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
+booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
+ booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository
 booker/app/maroos/restaurants/domain/Restaurant.java
  booker.app.maroos.restaurants.domain.Restaurant
 booker/app/maroos/restaurants/domain/vo/RestaurantId.java
  booker.app.maroos.restaurants.domain.vo.RestaurantId
-booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
- booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository
+booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
+ booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
+booker/app/maroos/customer/application/create_profile/CustomerProfileCreatorUseCase.java
+ booker.app.maroos.customer.application.create_profile.CustomerProfileCreatorUseCase
+booker/app/maroos/customer/domain/Customer.java
+ booker.app.maroos.customer.domain.Customer
+booker/app/maroos/customer/domain/vo/CustomerId.java
+ booker.app.maroos.customer.domain.vo.CustomerId
+booker/app/maroos/customer/domain/vo/CustomerPassword.java
+ booker.app.maroos.customer.domain.vo.CustomerPassword
+booker/app/maroos/customer/application/create_profile/CreateCustomerRequest.java
+ booker.app.maroos.customer.application.create_profile.CreateCustomerRequest
+booker/app/maroos/customer/domain/CustomerBirthDay.java
+ booker.app.maroos.customer.domain.CustomerBirthDay
+booker/app/maroos/customer/domain/vo/CustomerPhone.java
+ booker.app.maroos.customer.domain.vo.CustomerPhone
+booker/app/maroos/customer/domain/vo/CustomerEmail.java
+ booker.app.maroos.customer.domain.vo.CustomerEmail
+booker/app/maroos/customer/CustomerRepository.java
+ booker.app.maroos.customer.CustomerRepository
+booker/app/maroos/customer/domain/vo/CustomerName.java
+ booker.app.maroos.customer.domain.vo.CustomerName

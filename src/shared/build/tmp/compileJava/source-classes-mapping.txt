@@ -19,3 +19,5 @@ booker/app/shared/domain/AggregateRoot.java
  booker.app.shared.domain.AggregateRoot
 booker/app/shared/infrastructure/bus/event/SpringApplicationEventBus.java
  booker.app.shared.infrastructure.bus.event.SpringApplicationEventBus
+booker/app/shared/domain/CustomerCreatedDomainEvent.java
+ booker.app.shared.domain.CustomerCreatedDomainEvent

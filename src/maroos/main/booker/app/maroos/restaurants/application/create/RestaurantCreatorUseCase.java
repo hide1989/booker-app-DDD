@@ -29,14 +29,14 @@ public final class RestaurantCreatorUseCase {
          RestaurantPhone  restaurantPhone = new RestaurantPhone(request.restaurantPhone());
 
          Restaurant restaurant = Restaurant.create(
-                 restaurantId,
-                 restaurantName,
-                 restaurantAbstract,
-                 restaurantSpecialities,
-                 restaurantSlogan,
-                 restaurantLogo,
-                 restaurantWebSite,
-                 restaurantPhone
+             restaurantId,
+             restaurantName,
+             restaurantAbstract,
+             restaurantSpecialities,
+             restaurantSlogan,
+             restaurantLogo,
+             restaurantWebSite,
+             restaurantPhone
          );
         
         respository.save(restaurant);

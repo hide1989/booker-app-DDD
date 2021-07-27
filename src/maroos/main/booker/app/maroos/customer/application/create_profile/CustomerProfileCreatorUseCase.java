@@ -38,6 +38,5 @@ public class CustomerProfileCreatorUseCase {
 
         repository.save(customer);
         eventBus.publish(customer.pullDomainEvents());
-
     }
 }

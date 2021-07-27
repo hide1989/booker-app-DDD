@@ -28,8 +28,8 @@ booker/app/maroos/restaurants/domain/vo/RestaurantId.java
  booker.app.maroos.restaurants.domain.vo.RestaurantId
 booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
  booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
-booker/app/maroos/customer/application/create_profile/CustomerProfileCreatorUseCase.java
- booker.app.maroos.customer.application.create_profile.CustomerProfileCreatorUseCase
+booker/app/maroos/customer/domain/vo/CustomerName.java
+ booker.app.maroos.customer.domain.vo.CustomerName
 booker/app/maroos/customer/domain/Customer.java
  booker.app.maroos.customer.domain.Customer
 booker/app/maroos/customer/domain/vo/CustomerId.java
@@ -46,5 +46,21 @@ booker/app/maroos/customer/domain/vo/CustomerEmail.java
  booker.app.maroos.customer.domain.vo.CustomerEmail
 booker/app/maroos/customer/CustomerRepository.java
  booker.app.maroos.customer.CustomerRepository
-booker/app/maroos/customer/domain/vo/CustomerName.java
- booker.app.maroos.customer.domain.vo.CustomerName
+booker/app/maroos/customer/application/create_profile/CustomerProfileCreatorUseCase.java
+ booker.app.maroos.customer.application.create_profile.CustomerProfileCreatorUseCase
+booker/app/maroos/branches/application/create/BranchCreatorUseCase.java
+ booker.app.maroos.branches.application.create.BranchCreatorUseCase
+booker/app/maroos/branches/domain/BranchRepository.java
+ booker.app.maroos.branches.domain.BranchRepository
+booker/app/maroos/branches/domain/vo/BranchLocation.java
+ booker.app.maroos.branches.domain.vo.BranchLocation
+booker/app/maroos/branches/domain/vo/BranchPhone.java
+ booker.app.maroos.branches.domain.vo.BranchPhone
+booker/app/maroos/branches/domain/vo/BranchPicture.java
+ booker.app.maroos.branches.domain.vo.BranchPicture
+booker/app/maroos/branches/application/create/CreateBranchRequest.java
+ booker.app.maroos.branches.application.create.CreateBranchRequest
+booker/app/maroos/branches/domain/vo/BranchId.java
+ booker.app.maroos.branches.domain.vo.BranchId
+booker/app/maroos/branches/domain/Branch.java
+ booker.app.maroos.branches.domain.Branch

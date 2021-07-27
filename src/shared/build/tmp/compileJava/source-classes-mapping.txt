@@ -21,3 +21,5 @@ booker/app/shared/infrastructure/bus/event/SpringApplicationEventBus.java
  booker.app.shared.infrastructure.bus.event.SpringApplicationEventBus
 booker/app/shared/domain/CustomerCreatedDomainEvent.java
  booker.app.shared.domain.CustomerCreatedDomainEvent
+booker/app/shared/domain/BranchCreatedDomainEvent.java
+ booker.app.shared.domain.BranchCreatedDomainEvent

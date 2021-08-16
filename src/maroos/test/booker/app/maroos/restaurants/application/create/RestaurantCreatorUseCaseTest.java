@@ -40,6 +40,7 @@ class RestaurantCreatorUseCaseTest {
                 new RestaurantWebSite(request.restaurantWebSite()),
                 new RestaurantPhone(request.restaurantPhone())
         );
+        
         RestaurantCreatedDomainEvent domainEvent = new RestaurantCreatedDomainEvent(
                 request.restaurantId(),
                 request.restaurantName(),

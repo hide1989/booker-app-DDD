@@ -1,0 +1,9 @@
+
+E
+java:S3740	"/Provide the parametrized type for this generic.(Øº²
+V	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(¶±éÑ
+\	java:S107"BConstructor has 10 parameters, which is greater than 7 authorized.(ƒË¡™úÿÿÿÿ
+G
+java:S35990",Use another way to initialize this instance.(ğÔÑåúÿÿÿÿ
+t
+java:S11710"YMove the contents of this initializer to a standard constructor or to field initializers.(ğÔÑåúÿÿÿÿ

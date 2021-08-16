@@ -23,3 +23,7 @@ booker/app/shared/domain/CustomerCreatedDomainEvent.java
  booker.app.shared.domain.CustomerCreatedDomainEvent
 booker/app/shared/domain/BranchCreatedDomainEvent.java
  booker.app.shared.domain.BranchCreatedDomainEvent
+booker/app/shared/domain/IntegerValueObject.java
+ booker.app.shared.domain.IntegerValueObject
+booker/app/shared/domain/bus/event/TableCreatedDomainEvent.java
+ booker.app.shared.domain.bus.event.TableCreatedDomainEvent

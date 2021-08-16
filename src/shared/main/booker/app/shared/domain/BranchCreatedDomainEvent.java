@@ -12,21 +12,27 @@ public class BranchCreatedDomainEvent extends DomainEvent {
     private final String branchLocation;
     private final String branchPhone;
     private final String branchPicture;
+    private final String openDoors;
+    private final String closeDoors;
 
-    public BranchCreatedDomainEvent(String aggregateId, String restaurantId, String branchLocation, String branchPhone, String branchPicture) {
+    public BranchCreatedDomainEvent(String aggregateId, String restaurantId, String branchLocation, String branchPhone, String branchPicture, String openDoors, String closeDoors) {
         super(aggregateId);
         this.restaurantId = restaurantId;
         this.branchLocation = branchLocation;
         this.branchPhone = branchPhone;
         this.branchPicture = branchPicture;
+        this.openDoors = openDoors;
+        this.closeDoors = closeDoors;
     }
 
-    public BranchCreatedDomainEvent(String aggregateId, String eventId, String occurredOn, String restaurantId, String branchLocation, String branchPhone, String branchPicture) {
+    public BranchCreatedDomainEvent(String aggregateId, String eventId, String occurredOn, String restaurantId, String branchLocation, String branchPhone, String branchPicture, String openDoors, String closeDoors) {
         super(aggregateId, eventId, occurredOn);
         this.restaurantId = restaurantId;
         this.branchLocation = branchLocation;
         this.branchPhone = branchPhone;
         this.branchPicture = branchPicture;
+        this.openDoors = openDoors;
+        this.closeDoors = closeDoors;
     }
 
     @Override
@@ -52,11 +58,13 @@ public class BranchCreatedDomainEvent extends DomainEvent {
         return Objects.equals(restaurantId, that.restaurantId) &&
                 Objects.equals(branchLocation, that.branchLocation) &&
                 Objects.equals(branchPhone, that.branchPhone) &&
-                Objects.equals(branchPicture, that.branchPicture);
+                Objects.equals(branchPicture, that.branchPicture) &&
+                Objects.equals(openDoors, that.openDoors) &&
+                Objects.equals(closeDoors, that.closeDoors);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(restaurantId, branchLocation, branchPhone, branchPicture);
+        return Objects.hash(restaurantId, branchLocation, branchPhone, branchPicture, openDoors, closeDoors);
     }
 }

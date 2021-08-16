@@ -15,14 +15,14 @@ class InMemoryRestaurantRepositoryTest extends RestaurantsModuleInfrastructureTe
     @BeforeEach
     void setup(){
         restaurant =  new Restaurant(
-                new RestaurantId("123456789"),
-                new RestaurantName("El Mejor"),
-                new RestaurantAbstract("lo mejor de lo mejor"),
-                new RestaurantSpecialities("Mediterranea"),
-                new RestaurantSlogan("lo que hay es lo mejor"),
-                new RestaurantLogo("http://logo.jpg"),
-                new RestaurantWebSite("http://sitioweb.com.co"),
-                new RestaurantPhone("3046518")
+            new RestaurantId("123456789"),
+            new RestaurantName("El Mejor"),
+            new RestaurantAbstract("lo mejor de lo mejor"),
+            new RestaurantSpecialities("Mediterranea"),
+            new RestaurantSlogan("lo que hay es lo mejor"),
+            new RestaurantLogo("http://logo.jpg"),
+            new RestaurantWebSite("http://sitioweb.com.co"),
+            new RestaurantPhone("3046518")
         );
     }
 

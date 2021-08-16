@@ -1,66 +1,95 @@
-booker/app/maroos/restaurants/domain/vo/RestaurantLogo.java
- booker.app.maroos.restaurants.domain.vo.RestaurantLogo
-booker/app/maroos/restaurants/domain/vo/RestaurantWebSite.java
- booker.app.maroos.restaurants.domain.vo.RestaurantWebSite
-booker/app/maroos/restaurants/domain/vo/RestaurantAbstract.java
- booker.app.maroos.restaurants.domain.vo.RestaurantAbstract
-booker/app/maroos/restaurants/domain/vo/RestaurantSlogan.java
- booker.app.maroos.restaurants.domain.vo.RestaurantSlogan
-booker/app/maroos/restaurants/application/create/CreateRestaurantRequest.java
- booker.app.maroos.restaurants.application.create.CreateRestaurantRequest
-booker/app/maroos/restaurants/domain/vo/RestaurantName.java
- booker.app.maroos.restaurants.domain.vo.RestaurantName
-booker/app/maroos/restaurants/domain/vo/RestaurantSpecialities.java
- booker.app.maroos.restaurants.domain.vo.RestaurantSpecialities
-booker/app/maroos/restaurants/domain/vo/RestaurantPhone.java
- booker.app.maroos.restaurants.domain.vo.RestaurantPhone
-booker/app/maroos/shared/infrastructure/persistence/MaroosHibernateConfiguration.java
- booker.app.maroos.shared.infrastructure.persistence.MaroosHibernateConfiguration
 booker/app/maroos/restaurants/infrastructure/persistence/MySqlRestaurantRepository.java
  booker.app.maroos.restaurants.infrastructure.persistence.MySqlRestaurantRepository
-booker/app/maroos/restaurants/domain/RestaurantRepository.java
- booker.app.maroos.restaurants.domain.RestaurantRepository
-booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
- booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository
-booker/app/maroos/restaurants/domain/Restaurant.java
- booker.app.maroos.restaurants.domain.Restaurant
-booker/app/maroos/restaurants/domain/vo/RestaurantId.java
- booker.app.maroos.restaurants.domain.vo.RestaurantId
-booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
- booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
-booker/app/maroos/customer/domain/vo/CustomerName.java
- booker.app.maroos.customer.domain.vo.CustomerName
-booker/app/maroos/customer/domain/Customer.java
- booker.app.maroos.customer.domain.Customer
-booker/app/maroos/customer/domain/vo/CustomerId.java
- booker.app.maroos.customer.domain.vo.CustomerId
-booker/app/maroos/customer/domain/vo/CustomerPassword.java
- booker.app.maroos.customer.domain.vo.CustomerPassword
+booker/app/maroos/restaurants/domain/vo/RestaurantWebSite.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantWebSite
 booker/app/maroos/customer/application/create_profile/CreateCustomerRequest.java
  booker.app.maroos.customer.application.create_profile.CreateCustomerRequest
+booker/app/maroos/restaurants/domain/vo/RestaurantName.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantName
+booker/app/maroos/restaurants/domain/vo/RestaurantId.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantId
+booker/app/maroos/customer/domain/vo/CustomerName.java
+ booker.app.maroos.customer.domain.vo.CustomerName
+booker/app/maroos/shared/infrastructure/persistence/MaroosHibernateConfiguration.java
+ booker.app.maroos.shared.infrastructure.persistence.MaroosHibernateConfiguration
+booker/app/maroos/restaurants/domain/vo/RestaurantAbstract.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantAbstract
+booker/app/maroos/restaurants/domain/Restaurant.java
+ booker.app.maroos.restaurants.domain.Restaurant
+booker/app/maroos/branches/domain/vo/BranchPhone.java
+ booker.app.maroos.branches.domain.vo.BranchPhone
+booker/app/maroos/restaurants/application/create/CreateRestaurantRequest.java
+ booker.app.maroos.restaurants.application.create.CreateRestaurantRequest
 booker/app/maroos/customer/domain/CustomerBirthDay.java
  booker.app.maroos.customer.domain.CustomerBirthDay
+booker/app/maroos/branches/application/create/CreateBranchRequest.java
+ booker.app.maroos.branches.application.create.CreateBranchRequest
+booker/app/maroos/branches/domain/vo/TimeRange.java
+ booker.app.maroos.branches.domain.vo.TimeRange
+booker/app/maroos/customer/application/create_profile/CustomerProfileCreatorUseCase.java
+ booker.app.maroos.customer.application.create_profile.CustomerProfileCreatorUseCase
+booker/app/maroos/customer/domain/vo/CustomerPassword.java
+ booker.app.maroos.customer.domain.vo.CustomerPassword
+booker/app/maroos/restaurants/domain/RestaurantRepository.java
+ booker.app.maroos.restaurants.domain.RestaurantRepository
+booker/app/maroos/restaurants/domain/vo/RestaurantLogo.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantLogo
+booker/app/maroos/restaurants/domain/vo/RestaurantSlogan.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantSlogan
+booker/app/maroos/branches/domain/vo/BranchLocation.java
+ booker.app.maroos.branches.domain.vo.BranchLocation
+booker/app/maroos/restaurants/application/create/RestaurantCreatorUseCase.java
+ booker.app.maroos.restaurants.application.create.RestaurantCreatorUseCase
+booker/app/maroos/restaurants/domain/vo/RestaurantPhone.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantPhone
 booker/app/maroos/customer/domain/vo/CustomerPhone.java
  booker.app.maroos.customer.domain.vo.CustomerPhone
 booker/app/maroos/customer/domain/vo/CustomerEmail.java
  booker.app.maroos.customer.domain.vo.CustomerEmail
 booker/app/maroos/customer/CustomerRepository.java
  booker.app.maroos.customer.CustomerRepository
-booker/app/maroos/customer/application/create_profile/CustomerProfileCreatorUseCase.java
- booker.app.maroos.customer.application.create_profile.CustomerProfileCreatorUseCase
+booker/app/maroos/restaurants/infrastructure/persistence/InMemoryRestaurantRepository.java
+ booker.app.maroos.restaurants.infrastructure.persistence.InMemoryRestaurantRepository
+booker/app/maroos/branches/domain/vo/BranchPicture.java
+ booker.app.maroos.branches.domain.vo.BranchPicture
+booker/app/maroos/customer/domain/Customer.java
+ booker.app.maroos.customer.domain.Customer
+booker/app/maroos/customer/domain/vo/CustomerId.java
+ booker.app.maroos.customer.domain.vo.CustomerId
+booker/app/maroos/restaurants/domain/vo/RestaurantSpecialities.java
+ booker.app.maroos.restaurants.domain.vo.RestaurantSpecialities
+booker/app/maroos/tables/application/create/CreateTableRequest.java
+ booker.app.maroos.tables.application.create.CreateTableRequest
+booker/app/maroos/tables/domain/vo/TableEnviroment.java
+ booker.app.maroos.tables.domain.vo.TableEnviroment
+booker/app/maroos/branches/domain/vo/BranchId.java
+ booker.app.maroos.branches.domain.vo.BranchId
+booker/app/maroos/tables/domain/vo/TableType.java
+ booker.app.maroos.tables.domain.vo.TableType
+ booker.app.maroos.tables.domain.vo.tables
+booker/app/maroos/tables/domain/vo/TableId.java
+ booker.app.maroos.tables.domain.vo.TableId
+booker/app/maroos/tables/domain/TableRepository.java
+ booker.app.maroos.tables.domain.TableRepository
+booker/app/maroos/tables/domain/vo/AvailableTables.java
+ booker.app.maroos.tables.domain.vo.AvailableTables
+booker/app/maroos/tables/domain/vo/ChairQuantity.java
+ booker.app.maroos.tables.domain.vo.ChairQuantity
+booker/app/maroos/tables/application/create/TableCreatorUseCase.java
+ booker.app.maroos.tables.application.create.TableCreatorUseCase
+booker/app/maroos/tables/domain/Table.java
+ booker.app.maroos.tables.domain.Table
 booker/app/maroos/branches/application/create/BranchCreatorUseCase.java
  booker.app.maroos.branches.application.create.BranchCreatorUseCase
 booker/app/maroos/branches/domain/BranchRepository.java
  booker.app.maroos.branches.domain.BranchRepository
-booker/app/maroos/branches/domain/vo/BranchLocation.java
- booker.app.maroos.branches.domain.vo.BranchLocation
-booker/app/maroos/branches/domain/vo/BranchPhone.java
- booker.app.maroos.branches.domain.vo.BranchPhone
-booker/app/maroos/branches/domain/vo/BranchPicture.java
- booker.app.maroos.branches.domain.vo.BranchPicture
-booker/app/maroos/branches/application/create/CreateBranchRequest.java
- booker.app.maroos.branches.application.create.CreateBranchRequest
-booker/app/maroos/branches/domain/vo/BranchId.java
- booker.app.maroos.branches.domain.vo.BranchId
+booker/app/maroos/branches/application/addTable/CreateTableRequest.java
+ booker.app.maroos.branches.application.addTable.CreateTableRequest
+booker/app/maroos/branches/infrastructure/persistence/InMemoryBranchRepository.java
+ booker.app.maroos.branches.infrastructure.persistence.InMemoryBranchRepository
 booker/app/maroos/branches/domain/Branch.java
  booker.app.maroos.branches.domain.Branch
+booker/app/maroos/branches/domain/vo/Table.java
+ booker.app.maroos.branches.domain.vo.Table
+booker/app/maroos/branches/application/addTable/AddTableToBranchUseCase.java
+ booker.app.maroos.branches.application.addTable.AddTableToBranchUseCase
